@@ -35,7 +35,7 @@ Run the code below to install the necessary modules.
 
 >$ pip install -r requirements.txt
 
-## Database init
+## Database
 Create a new database in pgAdmin (preferably named CheapGroceries)
 1. set the database and your password to pgadmin in app.py file.
 2. run table.sql, data.sql in your database.
@@ -43,5 +43,5 @@ Create a new database in pgAdmin (preferably named CheapGroceries)
 ## Running flask
 ## The python way
 
-$ python3 run.py
+$ python3 app.py
 

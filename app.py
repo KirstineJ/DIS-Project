@@ -16,7 +16,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="CheapGroceries",
     user="postgres",
-    password="kirs"
+    password="password"
 )
 
 cursor = conn.cursor()
@@ -59,8 +59,8 @@ def success():
         
         # Fetch the product information from the database
         cursor = conn.cursor()
-        cursor.execute(sql, (Input, Input, Input, Input, Input, Input, Input, Input)) #hiver input ud af databasen
-        product = cursor.fetchone() #Fetchall() for at få alle rows
+        cursor.execute(sql, (Input, Input, Input, Input, Input, Input, Input, Input)) 
+        product = cursor.fetchone()
         
         if product:
             product_name, product_price = product
