@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <title> Data collector app</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>The Cheapest Link</h1>
+            <h3>What are you looking for?</h3>
+            <form action="{{url_for('success')}}" method="POST">
+                <input title="Type in the product" placeholder="Type in your desired product" type="text"  name="Product_name" required> <br>
+                <button type="submit"> Find the cheapest product </button>
+            </form>
+        </div>
+    </body>
+
+</html>
